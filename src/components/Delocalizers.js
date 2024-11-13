@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import JsonDisplay from './JsonDisplay';
 
 const Delocalizers = () => {
     const [fileList, setFileList] = useState([]);
@@ -62,13 +63,7 @@ const Delocalizers = () => {
                 </div>
             </form>
             </section>
-            <section>
-                <pre>
-                    <code id="jsonfield">
-                    {fileContent}
-                    </code>
-                </pre>
-            </section>
+            <JsonDisplay content={fileContent} />
         </article>
     );
 };

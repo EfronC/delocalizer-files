@@ -7,11 +7,9 @@ const Header = () => (
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Delocalizer</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          Just a simple page to share example resources for the Delocalizer project.
         </p>
       </div>
     </div>
@@ -19,7 +17,7 @@ const Header = () => (
       <ul>
         <li><a href="#delocalizers">Delocalizers</a></li>
         <li><a href="#names">Names</a></li>
-        <li><a href="#elements">Elements</a></li>
+        {/*<li><a href="#elements">Elements</a></li>*/}
       </ul>
     </nav>
   </header>
