@@ -1,0 +1,25 @@
+{
+  "delocalizers": [
+    "hxeros.json",
+    "asamade.json",
+    "25jigen.json",
+    "matoseihei.json",
+    "bleach.json",
+    "amagami.json",
+    "yumemiru.json",
+    "one_piece.json",
+    "recreators.json",
+    "kekkon_names.json"
+  ],
+  "names": [
+    "dainanaoji_names.json",
+    "nageki_names.json",
+    "25jigen_names.json",
+    "kimisen_names.json",
+    "bleach_names.json",
+    "lv2cheat_names.json",
+    "heavyobject_names.json",
+    "recreators_names.json",
+    "amagami_names.json"
+  ]
+}
