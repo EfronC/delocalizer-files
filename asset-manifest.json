@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/delocalizer-files/static/js/main.4387dfb3.js",
+    "main.js": "/delocalizer-files/static/js/main.704c8575.js",
     "static/js/453.a6a97343.chunk.js": "/delocalizer-files/static/js/453.a6a97343.chunk.js",
     "index.html": "/delocalizer-files/index.html",
-    "main.4387dfb3.js.map": "/delocalizer-files/static/js/main.4387dfb3.js.map",
+    "main.704c8575.js.map": "/delocalizer-files/static/js/main.704c8575.js.map",
     "453.a6a97343.chunk.js.map": "/delocalizer-files/static/js/453.a6a97343.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.4387dfb3.js"
+    "static/js/main.704c8575.js"
   ]
 }
