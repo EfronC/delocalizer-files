@@ -8,7 +8,7 @@ const Delocalizers = () => {
         // Fetch the files.json data from the public folder
         const fetchFiles = async () => {
           try {
-            const response = await fetch('/files/files.json'); // Path relative to public folder
+            const response = await fetch(`${process.env.PUBLIC_URL}/files/files.json`); // Path relative to public folder
             if (!response.ok) {
               throw new Error('Failed to load files');
             }
@@ -27,7 +27,7 @@ const Delocalizers = () => {
     
         if (selectedFile) {
           try {
-            const response = await fetch(`/files/delocalizers/${selectedFile}`);
+            const response = await fetch(`${process.env.PUBLIC_URL}/files/delocalizers/${selectedFile}`);
             if (!response.ok) {
               throw new Error(`Failed to load ${selectedFile}`);
             }
