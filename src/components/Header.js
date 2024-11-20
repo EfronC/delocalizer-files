@@ -17,7 +17,8 @@ const Header = () => (
       <ul>
         <li><a href="#delocalizers">Delocalizers</a></li>
         <li><a href="#names">Names</a></li>
-        {/*<li><a href="#elements">Elements</a></li>*/}
+        <li><a href="#scripts">Scripts</a></li>
+        <li><a href="#elements">Elements</a></li>
       </ul>
     </nav>
   </header>

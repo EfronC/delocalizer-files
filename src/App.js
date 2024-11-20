@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Article from './components/Article';
 import Elements from './components/Elements';
+import Scripts from './components/Scripts';
 import Delocalizers from './components/Delocalizers';
 import Names from './components/Names';
 
@@ -48,6 +49,7 @@ function App() {
       <div id="main">
         <Delocalizers />
         <Names />
+        <Scripts />
         {/* <Article id="intro" title="Intro" imageSrc={`${process.env.PUBLIC_URL}/images/pic01.jpg`}>
           Aenean ornare velit lacus, ac varius enim ullamcorper eu...
         </Article> */}
