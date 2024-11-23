@@ -92,33 +92,9 @@ def half_delocalize(action, eng, delo, ref=None, names=None, honorifics="./honor
 
 # MUX *************************************************************************************************
 
-def generate_subs_params(sfiles):
-	try:
-		params = []
-		for i in sfiles:
-			params = params + ["-map", "0:s:"+str(i)]
-		return params
-	except Exception as e:
-		print(e)
-		return False
-
-def generate_params(filename):
-	try:
-		sfiles = merger.get_kept_subs()
-		newfilename = OUTPUT+os.sep+filename + '.mkv'
-
-		subparams = generate_subs_params(sfiles)
-
-		ads = ["-metadata:s:s:{}".format(len(sfiles)), "language=eng", "-metadata:s:s:{}".format(len(sfiles)), "handler_name=English", "-metadata:s:s:{}".format(len(sfiles)), "title=Appended", "-max_interleave_delta", "0", "-disposition:s:0", "0", "-disposition:s:{}".format(len(sfiles)), "default", newfilename]
-		return (subparams, ads)
-	except Exception as e:
-		print(e)
-		return []
-
-def append(file:str, subtitle:str):
+def append(file:str, subtitle:str, path:str="./Finished"):
 	merger.set_file(file)
 	fname = file.split(".")[0]
 
-	params = generate_params(fname)
-	r = merger.mux(file, subtitle, params)
+	r = merger.mux(file, subtitle, path)
 	return r

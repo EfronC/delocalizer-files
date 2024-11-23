@@ -48,7 +48,7 @@ def full():
 
 		delocalized = full_delocalize(eng_sub, ref_sub, jobs["delocalizer"], jobs["names"], jobs["honorifics"], nt, shift, thresh)
 
-		final = append(eng[0], delocalized)
+		final = append(eng[0], delocalized, path)
 		print(final)
 
 def half(action):
@@ -59,7 +59,7 @@ def half(action):
 
 			delocalized = half_delocalize(action, eng_sub, jobs["delocalizer"])
 
-			final = append(eng[0], delocalized)
+			final = append(eng[0], delocalized, path)
 	else:
 		for eng, ref, nt, shift, thresh in jobs["pairs"]:
 			eng_sub = extract_english(eng[0], eng[1])
@@ -67,7 +67,7 @@ def half(action):
 
 			delocalized = half_delocalize(action, eng_sub, jobs["delocalizer"], ref_sub, jobs["names"], jobs["honorifics"], nt, shift, thresh)
 
-			final = append(eng[0], delocalized)
+			final = append(eng[0], delocalized, path)
 
 def main():
 	args = parser.parse_args()
